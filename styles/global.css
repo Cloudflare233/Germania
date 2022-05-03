@@ -1,0 +1,66 @@
+
+.title{
+   color: transparent;
+   -webkit-background-clip: text;
+   background-image: linear-gradient(to right, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);  
+   font-weight: 900;
+   font-size: 5rem; 
+   animation: FadeInUp 2s ease 1; /*调用动画：动画名、时间、时间线条、播放次数*/
+   animation-fill-mode: forwards;/*定义动画结束的状态*/
+   margin-top: 12px;
+} 
+
+@media only screen and (max-width: 767px) {
+            .title{
+				font-size: 4rem;
+          }
+		  .de {
+			  margin-top: 1px;
+		  }
+}
+.de{
+	animation: FadeInUp 2s ease 1; /*调用动画：动画名、时间、时间线条、播放次数*/
+    animation-fill-mode: forwards;/*定义动画结束的状态*/
+	font-weight: 900;
+}
+
+.button{
+	margin-left: 8px;
+}
+
+.cf{
+	background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+	color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 900; 	
+}
+
+.buttongrounp{
+	margin-top: 128px;
+}
+
+@keyframes FadeInUp{
+	0%{
+	opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+	}
+	100%{
+	opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes FadeInDown{
+    0%{
+	opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+	}
+    100%{
+	opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+		}
+}
