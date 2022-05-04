@@ -1,8 +1,13 @@
 import react, { useState } from 'react'
-import { Page } from '@geist-ui/core'
+import { Page, Button, Text, Grid, Card, Spacer , Keyboard, Modal, useModal, useKeyboard, KeyCode } from '@geist-ui/core'
 import Head from 'next/head'
 
 export default function Container({children,title}){
+   const { visible, setVisible, bindings } = useModal()
+  useKeyboard(
+    () => setVisible(true),
+    [KeyCode.KEY_S]
+	)
   return(
      <Page width="1000px" padding="32px">
        <Head>

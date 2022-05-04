@@ -7,21 +7,106 @@
    font-size: 5rem; 
    animation: FadeInUp 2s ease 1; /*调用动画：动画名、时间、时间线条、播放次数*/
    animation-fill-mode: forwards;/*定义动画结束的状态*/
-   margin-top: 12px;
+   margin-top: 16px;
 } 
 
-@media only screen and (max-width: 767px) {
-            .title{
-				font-size: 4rem;
-          }
-		  .de {
-			  margin-top: 1px;
-		  }
+.fade{
+	animation: FadeInUp 6s ease 1; /*调用动画：动画名、时间、时间线条、播放次数*/
+   animation-fill-mode: forwards;/*定义动画结束的状态*/
+   margin-top: 12px;
 }
+
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.polandball{
+	width: 64px;
+	height: 64px;
+}
+
+.center-title{
+	margin-top: 32px;
+	margin-bottom: 72px;
+	text-align:center;
+	font-weight: 900;
+	font-size: 4rem;
+	background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+	color: transparent;
+	-webkit-background-clip: text;
+}
+
+.fade-normal{
+	animation: FadeInUp 2s ease 1; /*调用动画：动画名、时间、时间线条、播放次数*/
+   animation-fill-mode: forwards;
+}
+
+.spain-title{
+	background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+	color: transparent;
+	-webkit-background-clip: text;
+	font-size: 4rem;
+	font-weight: 900;
+}
+
+.white {
+	color: #ffffff;
+}
+
+.spain{
+	margin-top: 32px;
+	text-align: center;
+}
+
+.be-title{
+	background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+	color: transparent;
+	-webkit-background-clip: text;
+	font-size: 4rem;
+	font-weight: 900;
+}
+
+
+.be{
+	margin-top: 32px;
+	text-align: center;
+}
+	
 .de{
 	animation: FadeInUp 2s ease 1; /*调用动画：动画名、时间、时间线条、播放次数*/
     animation-fill-mode: forwards;/*定义动画结束的状态*/
 	font-weight: 900;
+}
+
+
+@media only screen and (max-width: 767px) {
+            .title{
+				font-size: 3rem;
+          }
+		  .de {
+			  margin-top: 1px;
+			  font-size: 2.5rem;
+		  }
+		  .polandball {
+			  width: 36px;
+			  height: 36px;
+		  }
+		  .center-title{
+			  font-size: 2.5rem;
+		  }
+		  .spain-title{
+			  font-size: 2.5rem;
+		  }
+		  .spain{
+			  font-size: 2rem;
+		  }
+		  .be-title{
+			  font-size: 2.5rem;
+		  }
+		  .be{
+			  font-size: 2rem;
+		  }
 }
 
 .button{
