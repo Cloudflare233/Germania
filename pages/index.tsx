@@ -18,7 +18,7 @@ export default function Home() {
        <Grid xs={12}><img className="hidden" src="/R-C-removebg-preview.png" /></Grid>
        <Grid xs={12}>
 	     <h1 className="title float-left">Yeah Deutschland!
-		 <Button type="success-light" scale={1.75}>Donate to Wilhelm II →</Button>
+		 <Button type="success-light" scale={1.75}>Donate to Kaiser Wilhelm II →</Button>
 		 </h1>
 	   </Grid>
       </Grid.Container>
