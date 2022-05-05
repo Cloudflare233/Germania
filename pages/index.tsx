@@ -17,16 +17,20 @@ export default function Home() {
 	  <Grid.Container gap={2} my="32px">
        <Grid xs={12}><img className="hidden" src="/R-C-removebg-preview.png" /></Grid>
        <Grid xs={12}>
-	     <h1 className="title float-left">Yeah Deutschland!
-		 <Button type="success-light" scale={1.75}>Donate to Kaiser Wilhelm II →</Button>
+	     <h1 className="title float-left">Yeah! Deutschland!
+		 <NextLink href="/thank-you">
+		   <Button type="success-light" scale={1.75}>Donate to Kaiser Wilhelm II →</Button>
+		 </NextLink>
 		 </h1>
 	   </Grid>
       </Grid.Container>
 	 </div>
 	 <div className="m-head">
 	   <Grid.Container>
-	     <h1 className="title float-left">Yeah Deutschland!
-		 <Button type="success-light" scale={1.5}>Donate to Wilhelm II →</Button>
+	     <h1 className="title float-left">Yeah! Deutschland!
+		  <NextLink href="/thank-you">
+		   <Button type="success-light" scale={1.5}>Donate to Wilhelm II →</Button>
+		 </NextLink>
 		 </h1>
 	   </Grid.Container>
 	 </div>
