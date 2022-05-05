@@ -5,7 +5,7 @@
    background-image: linear-gradient(to right, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);  
    font-weight: 900;
    font-size: 5rem; 
-   animation: FadeInUp 2s ease 1; /*调用动画：动画名、时间、时间线条、播放次数*/
+   animation: FadeIn 2s ease 1; /*调用动画：动画名、时间、时间线条、播放次数*/
    animation-fill-mode: forwards;/*定义动画结束的状态*/
    margin-top: 16px;
 } 
@@ -79,10 +79,28 @@
 	font-weight: 900;
 }
 
+.hidden{
+	display: visible;
+}
+
+.head {
+	display: visible;
+}
+
+.m-head {
+	display: none;
+}
+
 
 @media only screen and (max-width: 767px) {
-            .title{
-				font-size: 3rem;
+	      .head{
+			  display: none;
+		  }
+		  .m-head {
+			  display: block;
+		  }
+          .title{
+				font-size: 3.2rem;
           }
 		  .de {
 			  margin-top: 1px;
@@ -107,6 +125,15 @@
 		  .be{
 			  font-size: 2rem;
 		  }
+		  .container{
+			  max-width: 1000000px;
+		  }
+		  .hidden{
+			  display: none;
+		  }
+		  .float-left{
+			  margin-right: 24px;
+		  }
 }
 
 .button{
@@ -122,6 +149,15 @@
 
 .buttongrounp{
 	margin-top: 128px;
+}
+
+@keyframes FadeIn{
+	0%{
+	opacity: 0;
+	}
+	100%{
+	opacity: 1;
+	}
 }
 
 @keyframes FadeInUp{

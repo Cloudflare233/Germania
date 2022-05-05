@@ -9,7 +9,7 @@ export default function Container({children,title}){
     [KeyCode.KEY_S]
 	)
   return(
-     <Page width="1000px" padding="32px">
+     <Page width="1000px">
        <Head>
 	    <title>{title}</title>
 	   </Head>
